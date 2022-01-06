@@ -26,7 +26,7 @@ export class ProductService {
       errorMessage = 'An error occurred: ${error.error.message)';
       }
       else {
-        errorMessage = 'Server returned error code: ${error.status}, error message ${error.message)';
+        errorMessage = `Server returned error code: ${error.status}, error message ${error.message}`;
       }
       console.error(errorMessage);
       return throwError(errorMessage);
