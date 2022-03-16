@@ -1,0 +1,15 @@
+<div class="parent">
+<h1 class="header">Parent component</h1>
+<h3 class="para"></h3>
+<div class="c1">
+  <p style="background-color: rgb(255, 0, 149);">{{this.message}}</p>
+<app-childcomponent [data]="myMessage" [data3]="yourmessage" (event)="receviedMessage($event)"></app-childcomponent>
+
+<!-- var obj = new childcomponent()
+obj.[data] = "mymessage"
+-->
+</div>
+<div class="c2">
+<app-childcomponent2 [data2]="myMessage2" eve></app-childcomponent2>
+</div>
+
